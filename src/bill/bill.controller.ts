@@ -20,9 +20,9 @@ export class BillController {
     return this.billService.create(createBillDto)
   }
 
-  @Get()
-  findAll() {
-    return this.billService.findAll()
+  @Get('alipay')
+  getAlipayBill() {
+    return this.billService.getAlipayBill()
   }
 
   @Get(':id')
